@@ -1,0 +1,20 @@
+{
+  "name": "Cookify Figma-ready UI/UX",
+  "import": "Drag the SVG files into Figma; each SVG is editable as vector/text objects.",
+  "screens": [
+    "landing.svg",
+    "assistant-home.svg",
+    "recipe-shopping.svg",
+    "cooking-feed.svg",
+    "design-system.svg"
+  ],
+  "reference_images": [
+    "assets-board.png",
+    "assistant-home.png",
+    "cooking-feed.png",
+    "landing.png",
+    "recipe-shopping.png",
+    "rtl-feed-final.png"
+  ],
+  "note": "The SVGs are Figma-importable editable references, not native .fig files."
+}

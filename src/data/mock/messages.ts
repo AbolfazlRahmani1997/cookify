@@ -1,0 +1,101 @@
+export interface ChatMessage {
+  id: string;
+  fromMe: boolean;
+  text: string;
+  at: string;
+}
+
+export interface Conversation {
+  id: string;
+  username: string;
+  name: string;
+  preview: string;
+  unread: number;
+  at: string;
+  messages: ChatMessage[];
+}
+
+export const conversations: Conversation[] = [
+  {
+    id: "m1",
+    username: "ali",
+    name: "علی رضایی",
+    preview: "دستور مرغ زعفرانی عالی بود، ممنون!",
+    unread: 2,
+    at: "2026-09-16T08:12:00.000Z",
+    messages: [
+      {
+        id: "m1-1",
+        fromMe: false,
+        text: "سلام سارا، دستور مرغ زعفرانی عالی بود!",
+        at: "2026-09-16T08:10:00.000Z",
+      },
+      {
+        id: "m1-2",
+        fromMe: false,
+        text: "زعفران را چقدر دم می‌ذاری؟",
+        at: "2026-09-16T08:12:00.000Z",
+      },
+    ],
+  },
+  {
+    id: "m2",
+    username: "nazanin",
+    name: "نازنین کریمی",
+    preview: "کیک شکلاتی‌ات را امتحان می‌کنم امشب.",
+    unread: 0,
+    at: "2026-09-15T21:40:00.000Z",
+    messages: [
+      {
+        id: "m2-1",
+        fromMe: true,
+        text: "عکس کیک شکلاتی را دیدی؟",
+        at: "2026-09-15T21:30:00.000Z",
+      },
+      {
+        id: "m2-2",
+        fromMe: false,
+        text: "کیک شکلاتی‌ات را امتحان می‌کنم امشب.",
+        at: "2026-09-15T21:40:00.000Z",
+      },
+    ],
+  },
+  {
+    id: "m3",
+    username: "mahdi",
+    name: "مهدی احمدی",
+    preview: "خمیر پیتزا را چند ساعت استراحت دادی؟",
+    unread: 1,
+    at: "2026-09-15T18:05:00.000Z",
+    messages: [
+      {
+        id: "m3-1",
+        fromMe: false,
+        text: "خمیر پیتزا را چند ساعت استراحت دادی؟",
+        at: "2026-09-15T18:05:00.000Z",
+      },
+    ],
+  },
+  {
+    id: "m4",
+    username: "zahra",
+    name: "زهرا موسوی",
+    preview: "قورمه سبزی خانوادگی شد، دستت درد نکنه.",
+    unread: 0,
+    at: "2026-09-14T12:22:00.000Z",
+    messages: [
+      {
+        id: "m4-1",
+        fromMe: false,
+        text: "قورمه سبزی خانوادگی شد، دستت درد نکنه.",
+        at: "2026-09-14T12:22:00.000Z",
+      },
+      {
+        id: "m4-2",
+        fromMe: true,
+        text: "خواهش می‌کنم زهرا جان، نوش جان!",
+        at: "2026-09-14T12:40:00.000Z",
+      },
+    ],
+  },
+];

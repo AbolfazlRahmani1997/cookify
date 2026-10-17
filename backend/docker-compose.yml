@@ -1,0 +1,15 @@
+services:
+  db:
+    image: postgres:16-alpine
+    container_name: cookify-postgres
+    environment:
+      POSTGRES_USER: cookify
+      POSTGRES_PASSWORD: cookify
+      POSTGRES_DB: cookify
+    ports:
+      - "5432:5432"
+    volumes:
+      - cookify_pg:/var/lib/postgresql/data
+
+volumes:
+  cookify_pg:

@@ -1,0 +1,10 @@
+Cookify — Figma Ready
+
+1) Open Figma and create a new Design file.
+2) Drag any SVG from the svg/ folder onto the canvas.
+3) Figma will import the SVG as editable vector/text layers.
+4) Use assets/ for the generated visual references.
+5) design-system.svg contains the current color, typography, component and RTL rules.
+
+Important:
+این خروجی فایل native .fig نیست؛ Figma-ready SVG است و بعد از Import قابل ویرایش است.
